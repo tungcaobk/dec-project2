@@ -1,0 +1,9 @@
+API_URL = "https://api.tiki.vn/product-detail/api/v1/products/"
+DB_HOST = "51.79.160.135"
+DB_PORT = "8306"
+DB_USERNAME = "root"
+DB_PASSWORD = "tgS6Q82*W4Z%"
+DB_NAME = "learning"
+TASK_FROM = 0
+TASK_TO = 10000
+NUM_THREAD = 10

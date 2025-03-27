@@ -2,7 +2,7 @@ import time
 import random
 import requests
 import re
-from config import API_URL, DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT
+from config import API_URL
 from logger import logger
 from product import Product
 
@@ -43,7 +43,7 @@ def get_product_info(product_id, sleep_time=0.1):
     end = time.time()
     product.duration = (end - start) * 1000
 
-    time.sleep(sleep_time)
+    # time.sleep(sleep_time)
 
     # Kiểm tra response tồn tại trước khi log status_code
     status_code = response.status_code if response else "N/A"

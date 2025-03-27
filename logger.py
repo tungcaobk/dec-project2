@@ -7,7 +7,7 @@ LOG_DIR = 'logs'
 os.makedirs(LOG_DIR, exist_ok=True)
 
 # Tạo tên file log với ngày hiện tại
-log_filename = os.path.join(LOG_DIR, f"{datetime.now().strftime('%Y-%m-%d')}_application.log")
+log_filename = os.path.join(LOG_DIR, f"application.log_{datetime.now().strftime('%Y-%m-%d')}")
 
 # Cấu hình logging
 def setup_logging():
